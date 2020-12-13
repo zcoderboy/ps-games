@@ -56,7 +56,7 @@ function getMarkup(game,index) {
         <i class="fa fa-arrow-right"></i>
       </div>
       <div class="game-card-desc">
-        <p>${game.description.substring(0, 200) + " ..."}</p>
+        <p>${game.description.substring(0, 150) + " ..."}</p>
       <div>
     </div>
   `
@@ -124,7 +124,7 @@ function getMarkup(game,index) {
           ease: Elastic.easeOut,
         })
         timeline.to(descNode,{opacity:1,color: textColor, duration:0.3})
-        
+
         document.getElementById('game-reveal').style.display = "grid"
         this.dataset.opened = "1"
       }else{
